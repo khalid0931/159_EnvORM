@@ -7,12 +7,14 @@ module.exports = (sequelize, DataTypes) => {
         },
         title: {
             type: DataTypes.STRING,
+            allowNull: false,
         },
         description: {
             type: DataTypes.TEXT,
         },
         author: {
             type: DataTypes.STRING,
+            allowNull: false,
         },
     });
     return Komik;
